@@ -1,15 +1,24 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+/* Header */
 
 header {
   background-color: #333333;
 }
 
 nav {
-  width: 1024px;
-  margin: 0 auto;
 }
 
 nav ul {
@@ -30,4 +39,10 @@ nav a {
 nav img {
   position: relative;
   top: 2px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
 }
