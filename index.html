@@ -47,7 +47,7 @@
 
   <footer>
     <div class="copyright">
-      Copyright © 2021 Apple Inc. All rights reserved.
+      Copyright &copy; <span id="copyright-year">2021</span> Apple Inc. All rights reserved.
     </div>
 
     <div class="terms">
@@ -61,6 +61,10 @@
       United States
     </div>
   </footer>
+
+  <script>
+    document.getElementById('copyright-year').innerHTML = new Date().getFullYear();
+  </script>
 </body>
 
 </html>
