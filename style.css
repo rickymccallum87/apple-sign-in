@@ -1,6 +1,13 @@
+@font-face {
+  font-family: 'San Francisco Pro';
+  src: url('SFProDisplay-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'San Francisco Pro', sans-serif;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -47,7 +54,7 @@ nav img {
 main {
   text-align: center;
   color: #494949;
-  letter-spacing: -1px;
+  font-size: 18px;
 }
 
 main h1 {
@@ -83,7 +90,7 @@ hr {
 }
 
 aside {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .create-account {
