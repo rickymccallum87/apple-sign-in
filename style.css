@@ -21,6 +21,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #0070c9;
 }
 
 /* Header */
@@ -62,24 +63,50 @@ main h1 {
   font-weight: normal;
 }
 
-#apple-id {
+.input-container {
+  position: relative;
+  width: 320px;
+  margin: 0 auto 64px;
+}
+
+input[type=text] {
   font-size: 17px;
   color: gray;
   background-color: #fff;
   display: block;
   padding-left: 12px;
-  border: 1px solid gray;
+  border: 1px solid #d6d6d6;
   border-radius: 4px;
-  margin: 0 auto 64px;
-  width: 320px;
+  box-sizing: border-box;
   height: 40px;
+  width: 100%;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  background-image: url('img/arrow-icon.png');
+}
+
+input[type=checkbox] {
+  opacity: 0;
+}
+
+label {
   position: relative;
 }
 
-#apple-id::after {
-  content: "";
-  position: relative;
-  right: 0;
+.checkbox {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: -24px;
+  top: 4px;
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  border-radius: 3px;
 }
 
 hr {
